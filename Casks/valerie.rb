@@ -12,6 +12,8 @@ cask "valerie" do
   depends_on macos: ">= :sonoma"
 
   app "Valerie.app"
+  # The valerie command for terminals (valerie screenshot, valerie call…).
+  binary "#{appdir}/Valerie.app/Contents/MacOS/valerie"
 
   zap trash: [
     "~/.config/valerie",
